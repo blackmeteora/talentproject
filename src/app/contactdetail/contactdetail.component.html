@@ -1,0 +1,28 @@
+<div [@slideIn] class="container">
+  <div class="row">
+    <div class="col col-xs-12">
+      <label>Ad</label>
+      <input type="text" class="form-control" [(ngModel)]="contact.Name" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-xs-12">
+      <label>Soyad</label>
+      <input type="text" [(ngModel)]="contact.Surname" class="form-control">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-xs-12">
+      <label>Telefon Numarası</label>
+      <input type="text" [(ngModel)]="contact.PhoneNumber" class="form-control">
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col col-xs-12 text-right">
+      <a class="btn btn-success btn-save" (click)="goBack()"><i class="fa fa-save"></i> Kaydet</a>
+    </div>
+  </div>
+
+
+</div>
+
