@@ -5,11 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './common/navbar/navbar.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { ContactdetailComponent } from './contactdetail/contactdetail.component';
-import { ContactlistComponent } from './contactlist/contactlist.component';
 
 import { ContactService } from './models/contact.service';
 import { FormsModule } from '@angular/forms';
@@ -17,9 +15,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ContactdetailComponent,
-    ContactlistComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
